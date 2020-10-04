@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5F08AACB-F5DD-421D-B04F-7C0C2C383AEF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NumberToVoice</RootNamespace>
+    <AssemblyName>NumberToVoice</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1million.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\34.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\35.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\36.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\37.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\39.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\43.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\44.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\45.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\46.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\47.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\49.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\51.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\52.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\53.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\54.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\55.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\56.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\57.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\58.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\59.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\63.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\65.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\66.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\67.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\68.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\69.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\72.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\73.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\74.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\76.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\77.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\78.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\79.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\80.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\82.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\83.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\84.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\85.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\86.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\87.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\88.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\89.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\90.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\91.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\92.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\93.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\94.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\95.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\96.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\97.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\98.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\99.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\300.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\400.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\500.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\600.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\700.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\800.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\900.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2000.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3000.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4000.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5000.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6000.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8000.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9000.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10000.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hundred.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\million.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thousand.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
